@@ -1,0 +1,76 @@
+/* GLOBAL SETTINGS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #BB99DD;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+/* HEADER */
+
+.main-header .photo{
+    width: 200px;
+    border-radius: 100%;
+    padding: 4px;
+    border: 2px solid #BB99DD;
+}
+
+.main-header .instagram{
+    margin: 10px 0 33px;
+}
+
+/* MAIN */
+
+.main-content .button{
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid #BB99DD;
+    padding: 13px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    min-width: 326px;
+}
+
+.main-content .button:hover{
+    background-color: #BB99DD;
+    color: #fff;
+    transition: 500ms;
+}
+
+/* FOOTER */
+
+.main-footer{
+    display: flex;
+    justify-content: space-between;
+    min-width: 236px;
+    margin-top: 52px;
+}
+
+.main-footer .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+}
+
+.main-footer .link:hover{
+    border: 2px solid #BB99DD;
+    transition: 500ms;
+}
