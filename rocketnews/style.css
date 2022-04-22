@@ -1,0 +1,146 @@
+/* GLOBAL SETTINGS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #E1E1E6;
+    font-family: 'Spartan', sans-serif;
+    font-size: 14px;
+    height: 100vh;
+    width: 100vw;
+    padding: 50px 30px;
+    background-color: #121214;
+    background-image: url(assets/img/read_news.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 51vw 100vh;
+}
+
+/* HEADER */
+
+.main-header .logo{
+    width: 390px;
+    margin-bottom: 92px;
+}
+
+/* MAIN */
+
+.main-section .title{
+    color: #04D361;
+    font-family: 'Work-Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.main-section .subtitle{
+    font-size: 14px;
+    font-weight: 700;
+    margin: 9px 0;
+}
+
+.main-section .text{
+    font-size: 13px;
+}
+
+/* form */
+
+.main-form .description{
+    display: block;
+    margin: 50px 0px 17px;
+    color: #A8A8A8;
+}
+
+.box-button{
+    display: inline-flex;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.box-button .boxmail{
+    font-family: 'Work-Sans', sans-serif;
+    padding: 17px 10px;
+    width: 750px;
+    height: 48px;
+    border: none;
+    border-left: 5px solid #04D361;
+}
+
+.box-button .boxmail:focus{
+    outline: none;
+}
+
+.box-button .send{
+    cursor: pointer;
+    border: none;
+    width: 48px;
+    height: 48px;
+    background-color: #8257e5;
+}
+
+/* aside */
+
+.main-aside{
+    align-items: center;
+    margin-top: 50px;
+}
+
+.main-aside .link{
+    display: flex;
+    align-items: center;
+    color: #8257E5;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.main-aside .link .icon{
+    margin-left: 5px;
+}
+
+/* FLOATING CARD */
+
+.floating-card{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #121214c9;
+}
+
+.floating-card .card-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background-color: #E1E1E6;
+    color: #121214;
+    top: 25%;
+    left: 21%;
+    right: 21%;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.card-box .spotlightgreen{
+    color: #04D361;
+}
+
+.card-box .spotlightred{
+    color: #d30404;
+}
+
+.card-box .clean{
+    font-family: 'Spartan', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    background-color: #8257e5;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 70px;
+    margin-top: 20px;
+    padding: 7px;
+    border: none;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
