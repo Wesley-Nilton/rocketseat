@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>camp.in</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="assets/icons/logo.svg" alt="Logo do Camp.in">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <img src="assets/icons/log-in.svg" alt="Icone de entrada">
+                    <h1>Faça seu login</h1>
+                </div>
+                <p>Entre com suas informações de cadastro.</p>
+            </div>
+        </header>
+        <form action="" method="post">
+            <label class="label-login" for="mail">E-mail</label>
+            <div class="main-wrapper">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.33329 3.33331H16.6666C17.5833 3.33331 18.3333 4.08331 18.3333 4.99998V15C18.3333 15.9166 17.5833 16.6666 16.6666 16.6666H3.33329C2.41663 16.6666 1.66663 15.9166 1.66663 15V4.99998C1.66663 4.08331 2.41663 3.33331 3.33329 3.33331Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18.3333 5L9.99996 10.8333L1.66663 5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <input class="bgmail" type="email" name="mail" id="mail" placeholder="Digite seu e-mail" required autocomplete="email">
+            </div>
+            <label class="label-login" for="password">Senha</label>
+            <div class="main-wrapper">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.8333 9.16669H4.16667C3.24619 9.16669 2.5 9.91288 2.5 10.8334V16.6667C2.5 17.5872 3.24619 18.3334 4.16667 18.3334H15.8333C16.7538 18.3334 17.5 17.5872 17.5 16.6667V10.8334C17.5 9.91288 16.7538 9.16669 15.8333 9.16669Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5.83337 9.16669V5.83335C5.83337 4.72828 6.27236 3.66848 7.05376 2.88708C7.83516 2.10567 8.89497 1.66669 10 1.66669C11.1051 1.66669 12.1649 2.10567 12.9463 2.88708C13.7277 3.66848 14.1667 4.72828 14.1667 5.83335V9.16669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <input class="bglock" type="password" name="password" id="password" placeholder="Digite sua senha" required autocomplete="current-password">
+                <a class="visiblepassword" onclick="changeVisibility()">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_222_89)">
+                            <path d="M0.833374 9.99998C0.833374 9.99998 4.16671 3.33331 10 3.33331C15.8334 3.33331 19.1667 9.99998 19.1667 9.99998C19.1667 9.99998 15.8334 16.6666 10 16.6666C4.16671 16.6666 0.833374 9.99998 0.833374 9.99998Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_222_89">
+                                <rect width="20" height="20" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <div class="second-wrapper">
+                <div class="check-component">
+                    <input class="check" type="checkbox" name="check" id="check">
+                    <label class="label-check" for="check">Lembre-me</label>
+                </div>
+                <a class="mark" href="#">Esqueci minha senha</a>
+            </div>
+            <input class="button" type="submit" value="Entrar">
+        </form>
+        <footer>
+            <p class="mark">Não tem uma conta? <a class="mark -bold" href="#">Registre-se</a></p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
