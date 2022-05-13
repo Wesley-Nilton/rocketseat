@@ -57,6 +57,7 @@ header .header-wrapper{
 
 .header-wrapper .header-logo{
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
