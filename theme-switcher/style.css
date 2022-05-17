@@ -1,0 +1,107 @@
+/* GLOBAL SETTINGS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: #292C35;
+    --superdark: #111;
+    --label-light: #07060623;
+	--light: #F1F1F1;
+
+    --fontbase: 'Varela Round', sans-serif;
+
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontbase);
+    width: 100vw;
+    height: 100vh;
+    transition: 600ms;
+    background-color: var(--light);
+}
+
+/* MAIN TITLE */
+body .main-title{
+    color: var(--superdark);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    transition: 600ms;
+}
+
+/* MAIN SWITCH */
+body .main-switch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 23.5rem;
+    height: 10rem;
+    padding: .8rem;
+    transition: 600ms;
+    border-radius: 5.9rem;
+    background-color: var(--label-light);
+}
+
+.main-switch::before, .main-switch::after{
+    content: '';
+    display: block;
+    width: 7.8rem;
+    height: 7.8rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.main-switch::before{
+    background-image: url('assets/icons/moon.svg');
+}
+
+.main-switch::after{
+    background-image: url('assets/icons/sun.svg');
+}
+
+.main-switch .circle{
+    position: absolute;
+    top: 2rem;
+    width: 6.1rem;
+    height: 6.1rem;
+    margin-left: 1.3rem;
+    transition: 600ms;
+}
+
+.main-switch .circle::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1.3rem;
+    left: -1.3rem;
+    width: 8.6rem;
+    height: 8.6rem;
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: var(--light);
+}
+
+/* DARK MODE */
+body.dark-mode{
+    background-color: var(--dark);
+}
+
+body.dark-mode .main-title{
+    color: var(--light);
+}
+
+body.dark-mode .main-switch{
+    background-color: var(--superdark);
+}
+
+body.dark-mode .circle{
+    transform: translateX(13.3rem);
+}
