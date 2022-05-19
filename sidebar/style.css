@@ -1,0 +1,198 @@
+/* GLOBAL SETTINGS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --light-grey: #dce4e3;
+    --text-color: #084236;
+
+    --fontbase: 'Poppins', sans-serif;
+
+    font-size: 62.5%
+  }
+
+body{
+    color: var(--text-color);
+    font-family: var(--fontbase);
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--light-grey);
+}
+
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    left: 2.7rem;
+    transition: left 400ms;
+}
+
+span{
+    visibility: hidden;
+    opacity: 0;
+    transition: 300ms;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* MAIN */
+main{
+    display: grid;
+    grid-template-areas: 'navigation header';
+    grid-template-columns: 1fr 100fr;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+/* HEADER */
+header{
+    grid-area: header;
+}
+
+header h1{
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+    margin: 1.8rem;
+}
+
+/* NAVIGATION */
+nav{
+    grid-area: navigation;
+    position: relative;
+    width: 7.8rem;
+    padding: 2.6rem 2.7rem 1.8rem;
+    transition: width 400ms;
+    background-color: var(--green);
+}
+
+nav .logo-wrapping{
+    display: flex;
+    align-items: center;
+    gap: 11.9rem;
+    height: 2.5rem;
+}
+
+nav .logo-wrapping span img{
+    width: 6.4rem;
+}
+
+nav .logo-wrapping button img{
+    width: 2.4rem;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 3.4rem;
+    margin-top: 3.8rem;
+}
+
+nav ul li{
+    display: flex;
+    width: 100%;
+}
+
+nav ul li a{
+    color: var(--text-color);
+    display: flex;
+    position: relative;
+    z-index: 0;
+    align-items: center;
+    gap: 1.3rem;
+    font-size: 1.5rem;
+}
+
+nav ul li a img{
+    width: 2.4rem;
+}
+
+nav ul li a::after{
+    content: '';
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+    z-index: -1;
+    transition: width 400ms;
+}
+
+nav ul li a.active::after{
+    top: -1.2rem;
+    left: -1.3rem;
+    border-radius: 1.2rem;
+    background-color: var(--light-green);
+}
+
+/* SIDEBAR EXPANDED */
+nav.sidebar-expanded{
+    width: 25.1rem;
+}
+
+nav.sidebar-expanded button{
+    left: 21.2rem;
+    width: 2.4rem;
+}
+
+nav.sidebar-expanded span{
+    visibility: visible;
+    opacity: 1;
+}
+
+nav.sidebar-expanded ul li a.active::after{
+    width: 22.2rem;
+}
+
+/* USER INFORMATION */
+div.user-information{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+    padding: .7rem 1.4rem;
+    transition: width 400ms;
+    background-color: var(--light-green);
+}
+
+.user-information span{
+    display: flex;
+    gap: .9rem;
+}
+
+.user-information span .specifications{
+    white-space: nowrap;
+}
+
+.user-information span .specifications h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.25rem;
+}
+
+.user-information span .specifications p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.user-information span > img{
+    height: 4.5rem;
+    width: 4.5rem;
+    object-fit: cover;
+    border-radius: 1.2rem;
+}
+
+.user-information button > img{
+    width: 2.4rem;
+}
