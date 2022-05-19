@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Dashboard</h1>
+        </header>
+        <nav>
+            <div class="logo-wrapping">
+                <span><img src="assets/img/logo.svg" alt="Logo da Vet"></span>
+                <button onclick="activeOrDesativeMenu()"><img src="assets/icons/menu.svg" alt="Icone de interação com o menu"></button>
+            </div>
+            <ul>
+                <li>
+                    <a class="active" href="#"><img src="assets/icons/search.svg" alt="Icone de pesquisa"><span>Buscar</span></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/icons/grid.svg" alt="Icone de janela"><span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/icons/pet.svg" alt="Icone de pata"><span>Pets</span></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/icons/user.svg" alt="Icone de usuário"><span>Clientes</span></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/icons/vet.svg" alt="Icone de veterinário"><span>Vets</span></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/icons/settings.svg" alt="Icone de configurações"><span>Ajustes</span></a>
+                </li>
+            </ul>
+            <div class="user-information">
+                <span>
+                    <img src="assets/img/photo.jpg" alt="Foto de perfil do usuário">
+                    <div class="specifications">
+                        <h2>Eleanor Pena</h2>
+                        <p>Veterinária</p>
+                    </div>
+                </span>
+                <button class="logout-app"><img src="assets/icons/log-out.svg" alt="Icone de saida"></button>
+            </div>
+        </nav>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
