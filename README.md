@@ -1,6 +1,6 @@
-<h1 align="center">Desafios - RocketSeat</h1>
+# Desafios - RocketSeat
 
-Repositório destinado aos desafios propostos pela RocketSeat na trilha Discover.
+Repositório destinado aos desafios propostos pela RocketSeat no programa Discover.
 
 ## 🔎| Visualize
 Visualize o resultado atual dos projetos:
