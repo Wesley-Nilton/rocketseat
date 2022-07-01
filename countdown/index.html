@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img class="top-img" src="assets/img/top-image.svg" alt="Nuvem superior">
+    <main>
+        <section class="floating-set hidden">
+            <div>
+                <button aria-label="Fechar menu" onclick="hideMenu()"><img src="assets/icons/close.svg" alt="Fechar"></button>
+                <p>Insira seu nome e e-mail e fique por dentro do lançamento!</p>
+                <form action="">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" autocomplete="name" required>
+                    <label for="mail">E-mail</label>
+                    <input type="email" id="mail" autocomplete="name" required>
+                    <button class="default-btn">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <section class="countdown-set">
+            <h1>Ready to Launch in...</h1>
+            <div>
+                <ul>
+                    <li>Dias</li>
+                    <li>Horas</li>
+                    <li>Minutos</li>
+                    <li>Segundos</li>
+                </ul>
+                <p><span id="days">08</span> : <span id="hours">12</span> : <span id="minutes">44</span> : <span id="seconds">28</span></p>
+            </div>
+            <p>Inscreva-se para saber mais sobre o lançamento</p>
+            <button class="default-btn" onclick="showMenu()">Inscreva-se</button>
+        </section>
+    </main>
+    <img class="bottom-img" src="assets/img/bottom-image.svg" alt="Nuvem inferior">
+    <script src="script.js"></script>
+</body>
+</html>

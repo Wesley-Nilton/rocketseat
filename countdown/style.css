@@ -1,0 +1,245 @@
+/* GLOBAL SETTINGS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #4D4C59;
+    --black-floating-card: #121214;
+    --floating-card-blanket: #000000a8;
+    --floating-card-bg: #E1E1E6;
+    --purple: #6C63FF;
+    --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.default-btn{
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    width: 16rem;
+    height: 4.6rem;
+    border-radius: 1rem;
+    background-color: var(--purple);
+}
+
+.top-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bottom-img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* MAIN */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8.2rem;
+    margin-inline: 6rem;
+}
+
+/* floating card body */
+main .floating-set{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--floating-card-blanket);
+}
+
+.floating-set div{
+    position: relative;
+    margin-inline: 5rem;
+    padding: 4.5rem 2.3rem 3rem;
+    border-radius: 1rem;
+    background-color: var(--floating-card-bg);
+}
+
+.floating-set div > button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3rem;
+    border-radius: 0 .9rem;
+    background-color: var(--purple);
+}
+
+.floating-set div p{
+    color: var(--black-floating-card);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.floating-set div form{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.floating-set div form input{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+}
+
+.floating-set div form input:last-of-type{
+    margin-bottom: 3rem;
+}
+
+.floating-set div form button{
+    margin: 0 auto;
+}
+
+.floating-set.hidden{
+    display: none;
+    visibility: hidden;
+}
+
+/* countdown body */
+main .countdown-set{
+    text-align: center;
+}
+
+.countdown-set h1{
+    color: var(--purple);
+    font-size: 3.6rem;
+    line-height: 5.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.105em;
+}
+
+.countdown-set div{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 1.9rem;
+    margin-bottom: 13.3rem;
+}
+
+.countdown-set div ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    width: 100%;
+}
+
+.countdown-set div ul li{
+    color: var(--light-grey);
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    width: 25%;
+}
+
+.countdown-set div p{
+    color: var(--black);
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    left: 0;
+    font-size: 4.1rem;
+    font-weight: 400;
+    line-height: 10.8rem;
+    white-space: nowrap;
+}
+
+.countdown-set > p{
+    color: var(--text-color);
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    font-weight: 400;
+    margin-bottom: 3.1rem;
+}
+
+/* RESPONSIVE */
+/* different types of adaptation for mobile devices */
+@media(min-width: 410px){
+    .countdown-set div p{
+        font-size: 4.8rem;
+    }
+}
+
+@media(min-width: 480px){
+    .countdown-set div p{
+        font-size: 5.8rem;
+    }
+}
+
+@media(min-width: 548px){
+    .countdown-set div p{
+        font-size: 6.8rem;
+    }
+}
+
+@media(min-width: 590px){
+    .countdown-set div p{
+        font-size: 7.2rem;
+    }
+}
+
+/* desktop version */
+@media (min-width: 1273px){
+    /* GLOBAL SETTINGS */
+    .top-img{
+        top: -1.5rem;
+    }
+
+    .bottom-img{
+        bottom: -10rem;
+    }
+
+    /* MAIN */
+    main:after{
+        content: '';
+        position: relative;
+        width: 60.7rem;
+        height: 43.5rem;
+        min-width: 30rem;
+        background-image: url('assets/img/rocket.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .countdown-set div ul{
+        gap: 3.5rem;
+    }
+}
