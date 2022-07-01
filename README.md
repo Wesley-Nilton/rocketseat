@@ -11,6 +11,7 @@ Visualize o resultado atual dos projetos:
 - [Login Form CSS](https://wesley-nilton.github.io/rocketseat/login-form-css/)
 - [Theme Switcher](https://wesley-nilton.github.io/rocketseat/theme-switcher/)
 - [Sidebar](https://wesley-nilton.github.io/rocketseat/sidebar/)
+- [Countdown](https://wesley-nilton.github.io/rocketseat/countdown/)
 
 ## 👥| Autor(es)
 Autores e contribuidores dos projetos:
