@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocketCard</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="side-information">
+            <form action="">
+                <label for="inputName">Digite seu usuário do GitHub</label>
+                <input type="text" id="inputName" autocomplete="off">
+                <button onclick="processUser()">Enviar</button>
+            </form>
+            <p>Compartilhe seu #rocketcard</p>
+        </div>
+        <div class="main-card">
+            <div class="card-header">
+                <div class="circle">
+                    <img src="assets/img/logo.svg" alt="Logo da Rocketseat com círculo branco">
+                </div>
+                <h1 id="name">Usuário não identificado</h1>
+            </div>
+            <div class="card-body">
+                <img id="avatar" src="assets/img/logo.svg" alt="Logo Rocketseat">
+                <ul>
+                    <li><img src="assets/icons/followers.svg" alt="Ícone de pessoas"><span id="followers">???</span> Seguidores</li>
+                    <li><img src="assets/icons/following.svg" alt="Ícone de pessoas"><span id="following">???</span> Seguindo</li>
+                    <li><img src="assets/icons/repository.svg" alt="Ícone de livro"><span id="repos">???</span> Repositórios</li>
+                    <li><img src="assets/icons/company.svg" alt="Ícone de prédio"><span id="company">???</span></li>
+                    <li><img src="assets/icons/location.svg" alt="Ícone de localização"><span id="location">???</span></li>
+                </ul>
+            </div>
+            <div class="card-footer">
+                <img src="assets/img/logo.svg" alt="Logo da Rocketseat">
+                <h2>ROCKETCARD</h2>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
