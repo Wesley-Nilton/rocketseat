@@ -12,6 +12,7 @@ Visualize o resultado atual dos projetos:
 - [Theme Switcher](https://wesley-nilton.github.io/rocketseat/theme-switcher/)
 - [Sidebar](https://wesley-nilton.github.io/rocketseat/sidebar/)
 - [Countdown](https://wesley-nilton.github.io/rocketseat/countdown/)
+- [RocketCard](https://wesley-nilton.github.io/rocketseat/rocketcard/)
 
 ## 👥| Autor(es)
 Autores e contribuidores dos projetos:
